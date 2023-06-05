@@ -5,14 +5,14 @@ Sometimes you may need to make your machine appear busy to avoid unnecessary tro
 
 ## How to use
 ```shell
-docker run -itd --name=acemarx-lookbusy --restart=always acemarx/lookbusy
+docker run -itd --name=lookbusy3 --restart=always --cpus 0.2 acemarx/lookbusy
 ```
 or build by yourself:
 
 ```shell
 git clone https://github.com/imacemarx/docker-lookbusy.git
 docker build -t myimage . 
-docker run -itd --restart=always myimage
+docker run -itd --restart=always --cpus 0.2 myimage
 ```
 
 

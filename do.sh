@@ -1,5 +1,5 @@
 #!/bin/bash
-nohup lookbusy -c 10-20 -m 128MB > /dev/null 2>&1 &
+nohup lookbusy -q -c 10-20 -m 128MB -r curve > /dev/null 2>&1 &
 
 while true
 do
